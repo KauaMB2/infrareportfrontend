@@ -29,6 +29,10 @@
     text-decoration: none;
     transition: background-color 0.3s;
   }
+  
+  .iconSVG{
+    margin: auto;
+  }
 
   .bottomNavBar_Div label.clicked {
     color: #0096ff;
