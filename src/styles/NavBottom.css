@@ -1,46 +1,49 @@
 .bottomNavBar {
-    display: none;
+  display: none; /* Hidden by default */
 }
-  @media (orientation: portrait) {
-    .bottomNavBar {
-      display: grid;
-      grid-template-columns: 28% 28% 28% 16%;
-      background-color: #0b88cc;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-    }
-    .bottomNavBar_Div label {
-        color: white;
-    }
-    .bottomNavBar_Div {
-      display: grid;
-      grid-template-rows: 40% 20%;
-      justify-content: center;
-      border-left: 1px solid blue;
-      border-right: 1px solid blue;
-      cursor: pointer;
-      color: white;
-      text-align: center;
-      padding: 5%;
-      margin: 0px;
-      text-decoration: none;
-      transition: background-color 0.3s
-    }
-    .reportListDiv.clicked:hover, .searchBtn:hover, .filterDiv:hover {
-      background-color: rgb(74, 197, 72);
-      transform: translateX(-0px);
-    }
-    .iconSVG {
-        margin: auto;
-        width: 20%;
-    }
-    .exitSVG{
-        width: 30%;
-    }
-    label{
-        margin-top: 12%;
-        font-size: 100%;
-    }
+
+@media (orientation: portrait) {
+  .bottomNavBar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 28% 28% 28% 16%;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh; /* Set the height of your bottomNavBar */
+    border-top: solid;
+    border-top-color: #808080;
+    border-top-width: 1px;
+    z-index: 1000; /* Ensure it is on top of the map */
   }
-  
+
+  .bottomNavBar_Div {
+    display: grid;
+    grid-template-rows: 40% 20%;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 5%;
+    margin: 0px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .bottomNavBar_Div label.clicked {
+    color: #0096ff;
+  }
+  label {
+    color: #808080;
+    margin-top: 12%;
+    font-size: 1em;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  .iconSVG {
+    width: 2em;
+  }
+}

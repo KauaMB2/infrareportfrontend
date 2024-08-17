@@ -55,10 +55,10 @@
 .searchBtn, .filterBtn {
     margin-bottom: 0.625em;
 }
-.exitBtn:hover,
-.filterBtn:hover,
-.searchBtn:hover,
-.reportListBtn:hover {
+.leftNavbar_Div .exitBtn:hover,
+.leftNavbar_Div .filterBtn:hover,
+.leftNavbar_Div .searchBtn:hover,
+.leftNavbar_Div .reportListBtn:hover {
     box-shadow: 1px 1px rgb(68, 181, 66), 2px 2px rgb(68, 181, 66), 3px 3px rgb(68, 181, 66);
     transform: translateX(-3px);
 }

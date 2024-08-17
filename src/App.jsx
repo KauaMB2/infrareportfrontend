@@ -17,6 +17,7 @@ import ErrorModal from './ErrorModal'
 import SearchModal from './SearchModal'
 import PostOccurrenceModal from './PostOccurrenceModal'
 import ReportInfoModal from "./ReportInfoModal"
+import './styles/Maps.css'
 
 const App = () => {
   var citizenAccount = localStorage.getItem("citizenAccount")
@@ -257,7 +258,7 @@ const App = () => {
             )}
             <Route path="*" element={<NotFound />} />
           </Routes>
-          {loggedIn && <NavBottom setCep={setCep} cep={cep} setMarkerPoints={setMarkerPoints} loggedIn={loggedIn} setLoggedIn={setLoggedIn} userEmail={userEmail} userPassword={userPassword} setEmail={setEmail} setPassword={setPassword} setShowSearchModal={setShowSearchModal} setShowFilterModal={setShowFilterModal} />}
+          {loggedIn && <NavBottom setCep={setCep} cep={cep} showFilterModal={showFilterModal} showSearchModal={showSearchModal} setMarkerPoints={setMarkerPoints} loggedIn={loggedIn} setLoggedIn={setLoggedIn} userEmail={userEmail} userPassword={userPassword} setEmail={setEmail} setPassword={setPassword} setShowSearchModal={setShowSearchModal} setShowFilterModal={setShowFilterModal} />}
         </main>
       </Router>
     </>

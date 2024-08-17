@@ -17,7 +17,6 @@ import TrashIcon from "./images/reportIcons/Trash.png"
 import VandalismIcon from "./images/reportIcons/Vandalism.png"
 import ConcludedIcon from "./images/reportIcons/Concluded.png"
 import WithoutLightIcon from "./images/reportIcons/WithoutLight.png"
-import "./styles/Maps.css"
 import { GOOGLE_MAPS_API_KEY } from './GOOGLE_KEY'
 
 const libraries = ["visualization"]
